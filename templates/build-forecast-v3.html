@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PropheSee</title>
+    <title>Forecastr App: Let's Build a Time Series Forecast</title>
     
 
     <!-- Google Tag Manager Data Layer -->
@@ -47,9 +47,7 @@
 
                 <h3 class="data-narrative-logo">prophesee<span class='alpha'>beta</span></h3>
 
-                <nav>
-                    
-                </nav>
+              
 
                 <div id='nav-bg'></div>
                 <ul class="nav nav-tabs">
@@ -71,13 +69,17 @@
 
                         <div class='main-content'>
 
-                            <p>Simply click on the 'Choose file' CTA and upload your CSV to the app. </p><br/>
+                           <!-- <img class="csv-example" src="{{url_for('static', filename='img/csv_file_example.png')}}"/> -->
+                            <br/>
+                            <br/>
+                          
+
+                            <p>UPLOAD CSV HERE. </p><br/>
                             <input type="file" id="csv-file" name="files"/>
 
                         </div>
 
-                       
-
+                      
                       </div>
 
                       <div id="step2" class="tab-pane fade">
@@ -111,7 +113,7 @@
 
                         </div>
 
-                        <!-- <div id='build-forecast-sidenav'>
+                        <div id='build-forecast-sidenav'>
 
                             <img id="forecast-icon" src="{{url_for('static', filename='img/forecast_icon.png')}}"/>
                             <h4 class='side-nav-title build-title'>SETUP BASIC FORECAST</h4>
@@ -129,7 +131,7 @@
                                 <input class='option' type="radio" name="selection" value="logistic"> Logistic<br><br>
 
 
-                                <p id="logistic-option-text">By selecting a logistic forecast, you are required to set upper and lower saturation points.<a href="#">What's this?</a></p>
+                                <!-- <p id="logistic-option-text">By selecting a logistic forecast, you are required to set upper and lower saturation points.<a href="#">What's this?</a></p> -->
 
                                 Upper: <input id="upper-limit" type="number"><br>
                                 Lower: <input id="lower-limit" type="number"><br><br>
@@ -138,7 +140,7 @@
 
                             <button id="generate-forecast">GENERATE FORECAST</button>
 
-                        </div> -->
+                        </div>
 
                     </div>
 
@@ -208,18 +210,18 @@
                                       <option value="logistic">LOGISTIC</option>
                                     </select>
                                 </li>
-                                <li class='arguments'>
+                                <!-- <li class='arguments'>
                                     <span class='argument-name'>UPPER LIMIT TO FORECAST</span><br>
                                     <input class='num-field' id="update-capacity" type="number">
                                 </li>
                                 <li class='arguments'>
                                     <span class='argument-name'>LOWER LIMIT TO FORECAST</span><br>
                                     <input class='num-field' id="update-min-saturation" type="number">
-                                </li>
+                                </li> -->
 
-                            </div>
+                            <!-- </div>
 
-                            <div class='filter-groups' id='seasonality-filters'>
+                             <div class='filter-groups' id='seasonality-filters'>
 
                                 <li class='param-header'>SEASONALITY (?)</li>
                                 <li class='arguments'>
@@ -231,18 +233,18 @@
                                 </li>
                                 <li class='arguments seasonality-check-options'>
                                     <span class='argument-name'>SEASONALITY TYPE:</span><br>
-                                    <input type="checkbox" name="seasonality_type" value="daily_seasonality"> DAILY<br>
-                                    <input type="checkbox" name="seasonality_type" value="weekly_seasonality"> WEEKLY<br>
-                                    <input type="checkbox" name="seasonality_type" value="yearly_seasonality"> YEARLY<br>
+                                    <input type="hidden" name="seasonality_type" value="daily_seasonality"> DAILY<br>
+                                    <input type="hidden" name="seasonality_type" value="weekly_seasonality"> WEEKLY<br>
+                                    <input type="hidden" name="seasonality_type" value="yearly_seasonality"> YEARLY<br>
 
                                 </li>
                                 <li class='arguments'>
                                     <span class='argument-name'>SEASONALITY PRIOR SCALE</span><br>
                                     <input class='num-field' id="seasonality-prior-scale" type="number">
                                 </li>
-                            </div>
+                            </div> -->
 
-                            <div class='filter-groups' id='changepoint-filters'>
+                             <!-- <div class='filter-groups' id='changepoint-filters'> 
 
                                 <li class='param-header'>CHANGEPOINTS (?)</li>
                                 <li class='arguments'>
@@ -254,7 +256,7 @@
                                     <input class='num-field' id="changepoints-prior-scale" type="number">
                                 </li>
 
-                            </div>
+                            </div>  -->
 
                             <button class='green-cta update-cta' id='update-chart'>UPDATE CHART</button>
 
@@ -265,7 +267,7 @@
         </section>
     </div>
 
- 
+
 
 </body>
 </html>
