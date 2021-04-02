@@ -384,7 +384,7 @@ def preprocessing(data):
     """
 
     # Check to see if the data has any null values
-    data = data.dropna()
+
     print('Is there any null values in this data? ' + str(data.isnull().values.any()))
 
     # If there is a null value in the dataset, locate it and emit the location of the null value back to the client, else continue:
@@ -395,8 +395,7 @@ def preprocessing(data):
 
     if do_nulls_exist == True:
         print('found a null value')
-        null_rows = pd.isnull(data).any(1).to_numpy().nonzero()[0]
-
+        null_rows = pd.isnull(data).any(1).nonzero()[0]
         print('######### ORIGINAL ROWS THAT NEED UPDATING ##############')
         print(null_rows)
         # Need to add 2 to each value in null_rows because there
