@@ -1,5 +1,6 @@
-# mishmash-team-blitzkreig
-Submission for Mish Mash Hackathon
+# PropheSee 🔮
+
+Forecast ANYTHING in three simple steps
 
 Step 1 - Upload a CSV <br>
 Step 2 - Visualize your timeseries <br>
