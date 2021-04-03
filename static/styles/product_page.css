@@ -1,8 +1,8 @@
 
         body {
             
-            font-family: "Montserrat","Helvetica Neue", "Helvetica";
-            background: #fbfbfb;
+            font-family: "Roboto","Helvetica Neue", "Helvetica";
+            background: #fff;
 
             
         }
@@ -63,7 +63,7 @@
             position: relative;
             text-align:center;
             font-weight: 300;
-            font-size:48px;
+            font-size:30px;
             padding-top: 75px;
             
             
@@ -83,7 +83,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            /* width: 90%; */
             position: relative;
             bottom: 0;
             padding-top:50px;    
@@ -109,14 +109,14 @@
         
         .button-style {
             
-            background-color:  #26a6fe;
+            background-color:  #03e486;
             color: #FFF;
             padding: 5px;
             padding-left: 10px;
             padding-right: 10px;
             font-size:12px;
             border-radius: 5px;
-            border:none;
+            border:3px;
             position: relative;
             top:50px;
                 
@@ -127,41 +127,41 @@
         
         .primary-cta {
             
-            background-color:  #26a6fe;
+            background-color:  #03e486;
             color: #FFF;
             padding: 10px;
             padding-left: 20px;
             padding-right: 20px;
-            font-size:14px;
+            font-size:20px;
             border-radius: 5px;
-            border:none;
+            border:3px;
             display: block;
             margin-left: auto;
             margin-right: auto;
             top: 30px;
             position: relative;
-            margin-top:25px;
-            width: 200px;
+            margin-top:30px;
+            width: 300px;
             text-align: center;
         }
         
         .primary-cta:hover {
             
-            background-color:  #26a6fe;
+            background-color:  #a007a5;
             color: #FFF;
             padding: 10px;
             padding-left: 20px;
             padding-right: 20px;
-            font-size:14px;
+            font-size:20px;
             border-radius: 5px;
-            border:none;
+            border:3px;
             display: block;
             margin-left: auto;
             margin-right: auto;
             top: 30px;
             position: relative;
-            margin-top:25px;
-            width: 200px;
+            margin-top:30px;
+            width: 300px;
             text-align: center;
         }
         
@@ -337,7 +337,7 @@
             
             position:relative;
             top:100px;
-            color:#444444;
+            color:#03e486;
             
         }
         
@@ -408,7 +408,7 @@
         }
         
         a {
-            color: lightslategray;
+            color: rgb(15, 15, 15);
             text-decoration: none;
         }
         
@@ -774,7 +774,7 @@
             
             width:100%;
             background-color: #FFF;
-            color:#444444;
+            color:#0c0c0c;
             padding: 50px;
             padding-bottom: 100px;
             border: 1px solid #ddd;
@@ -956,13 +956,16 @@
         footer {
             
             position:relative;
-            top:0;
+            top:20;
             padding:25px;
-            background-color: #3f474e;
-            border-top: 3px solid #26a6fe;
-            color: #FFF;
+            background-color: #03e486;
+            border-top: 3px solid #080808;
+            color: rgb(8, 8, 8);
             width: 100%;
-            height: 200px;
+            height: 80px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align:right;
             
         }
         
