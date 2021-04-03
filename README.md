@@ -1,5 +1,7 @@
 # prophecy.ai 🔮
 
+https://prophecy-ai.herokuapp.com/
+
 Generate baseline forecasts using Facebook Prophet & flask.
 
 Step 1 - Upload a CSV <br>
